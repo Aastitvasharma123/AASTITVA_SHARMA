@@ -1,0 +1,15 @@
+import javax.persistence.*;
+
+@Entity
+public class Task {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String description;
+    private boolean completed;
+
+    // Additional fields or relationships if needed
+
+    // getters and setters
+}
